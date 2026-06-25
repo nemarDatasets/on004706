@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Spatial memory and non-invasive closed-loop stimulus timing",
-  "description": "This dataset contains behavioral events and electrophysiological recordings from a hybrid spatial-navigation and free recall experiment conducted at the University of Pennsylvania (2021-2022). Participants performed a virtual courier task delivering items across a town, followed by recall testing. The experiment comprised read-only sessions for classifier training and closed-loop sessions with classifier-based stimulus timing optimization to enhance memory encoding. The dataset enables investigation of neural correlates of spatial and episodic memory, as well as the effects of real-time neural decoding on learning outcomes.",
-  "methods_description": "Participants performed a hybrid spatial-navigation and free recall task in which they delivered items to stores in a virtual town and subsequently recalled their deliveries. Read-only sessions generated training data for classifier models predicting recall success. In closed-loop sessions, stimulus presentation timing was optimized based on classifier predictions of good or bad memory encoding states.",
+  "description": "This dataset contains behavioral events and electrophysiological recordings from a hybrid spatial-navigation and free recall experiment conducted at the University of Pennsylvania (2021-2022). Participants performed a virtual courier task delivering items across a town, followed by recall testing. The experiment comprised two phases: read-only sessions for generating classifier training data, and closed-loop sessions where stimulus presentation timing was optimized based on real-time neural predictions of memory encoding. The dataset supports investigation of spatial memory dynamics and the efficacy of classifier-based closed-loop stimulation for memory enhancement.",
+  "methods_description": "The experiment employed a hybrid spatial-navigation and free recall paradigm in which subjects delivered items to stores in a virtual town and subsequently recalled their deliveries. Read-only sessions collected training data without classifier-based timing manipulation. Closed-loop sessions used classifier models to predict recall performance and timed stimulus presentation to coincide with predicted good or bad memory encoding states.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -42,7 +42,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
     },
     {
-      "term": "virtual navigation"
+      "term": "virtual reality"
     }
   ],
   "related_identifiers": [
