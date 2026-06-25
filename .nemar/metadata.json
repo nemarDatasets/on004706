@@ -1,36 +1,105 @@
 {
   "version": "2.0",
-  "dataset_id": "on004706",
-  "source": "openneuro",
-  "source_id": "ds004706",
+  "pipeline_stage": "enriched",
   "title": "Spatial memory and non-invasive closed-loop stimulus timing",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Joseph H. Rudoler": {},
     "Matthew R. Dougherty": {},
     "Brandon S. Katerman": {},
     "James P. Bruska": {},
     "Woohyeuk Chang": {},
-    "David J. Halpern": {},
+    "David J. Halpern": {
+      "orcid": "0000-0002-7490-5692"
+    },
     "Nicholas B. Diamond": {},
     "Michael J. Kahana": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004706.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004706",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004706",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2022.11.30.518606",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "beh",
     "eeg"
   ],
-  "datatypes": [
-    "beh",
-    "eeg"
-  ]
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt"
+  ],
+  "description": "This dataset contains behavioral and electrophysiological recordings from a hybrid spatial-navigation and free recall experiment designed to investigate memory encoding dynamics and test closed-loop stimulus timing optimization. Participants performed a virtual courier task involving spatial navigation and item delivery, followed by recall testing, across read-only baseline sessions and classifier-guided closed-loop sessions where stimulus presentation was timed to coincide with predicted memory encoding states. The dataset provides a resource for studying neural correlates of spatial and episodic memory in naturalistic task contexts. Note: Memory dynamics in closed-loop sessions may be influenced by the closed-loop timing manipulation and should be interpreted accordingly. Read-only sessions were not subject to this manipulation and are suitable for analyses of general mnemonic function.",
+  "methods_description": "The experiment employed a hybrid spatial-navigation and free recall paradigm conducted at the University of Pennsylvania's Computational Memory Lab (2021-2022). Participants completed read-only sessions to generate training data for memory classifiers, followed by closed-loop sessions where classifier-based predictions guided stimulus presentation timing. Intracranial electrophysiological recordings and behavioral event logs were collected throughout both session types. Memory dynamics in closed-loop sessions may reflect the influence of the closed-loop timing manipulation.",
+  "keywords": [
+    {
+      "term": "spatial memory"
+    },
+    {
+      "term": "episodic memory"
+    },
+    {
+      "term": "free recall"
+    },
+    {
+      "term": "closed-loop stimulation"
+    },
+    {
+      "term": "neural decoding"
+    },
+    {
+      "term": "memory encoding"
+    },
+    {
+      "term": "electrophysiology"
+    },
+    {
+      "term": "intracranial recording"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "virtual navigation"
+    },
+    {
+      "term": "virtual reality"
+    },
+    {
+      "term": "machine learning"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "U.S. Army Medical Research and Development Command",
+      "award_number": "MTEC-20-06-MOM-013",
+      "award_title": "Restoring memory with task-independent semi-chronic closed-loop direct brain stimulation and non-invasive closed-loop stimulus timing optimization"
+    }
+  ],
+  "source_hash": "b537249e422bc638f84aeb744c65f739ef75e569cf8b48dd8dce2a23bb03baf1"
 }
