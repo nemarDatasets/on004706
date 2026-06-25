@@ -1,17 +1,23 @@
 {
-    "Name": "Spatial memory and non-invasive closed-loop stimulus timing",
-    "BIDSVersion": "1.6.0",
-    "DatasetType": "raw",
-    "Authors": [
-        "Joseph H. Rudoler",
-        "Matthew R. Dougherty",
-        "Brandon S. Katerman",
-        "James P. Bruska",
-        "Woohyeuk Chang",
-        "David J. Halpern",
-        "Nicholas B. Diamond",
-        "Michael J. Kahana"
-    ],
-    "DatasetDOI": "doi:10.18112/openneuro.ds004706.v1.0.0",
-    "License": "CC0"
+  "Name": "Spatial memory and non-invasive closed-loop stimulus timing",
+  "BIDSVersion": "1.6.0",
+  "DatasetType": "raw",
+  "Authors": [
+    "Joseph H. Rudoler",
+    "Matthew R. Dougherty",
+    "Brandon S. Katerman",
+    "James P. Bruska",
+    "Woohyeuk Chang",
+    "David J. Halpern",
+    "Nicholas B. Diamond",
+    "Michael J. Kahana"
+  ],
+  "DatasetDOI": "10.82901/nemar.on004706",
+  "License": "CC0",
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.18112/openneuro.ds004706.v1.0.0"
+    }
+  ],
+  "Version": "1.0.0"
 }
