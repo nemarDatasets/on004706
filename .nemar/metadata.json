@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Spatial memory and non-invasive closed-loop stimulus timing",
+  "description": "This dataset contains behavioral events and electrophysiological recordings from a hybrid spatial-navigation and free recall experiment conducted at the University of Pennsylvania (2021-2022). Participants performed a virtual courier task delivering items across a town, followed by recall testing. The experiment comprised read-only sessions for classifier training and closed-loop sessions with classifier-based stimulus timing optimization to enhance memory encoding. The dataset enables investigation of neural correlates of spatial and episodic memory, as well as the effects of real-time neural decoding on learning outcomes.",
+  "methods_description": "Participants performed a hybrid spatial-navigation and free recall task in which they delivered items to stores in a virtual town and subsequently recalled their deliveries. Read-only sessions generated training data for classifier models predicting recall success. In closed-loop sessions, stimulus presentation timing was optimized based on classifier predictions of good or bad memory encoding states.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +18,34 @@
     "Nicholas B. Diamond": {},
     "Michael J. Kahana": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004706.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Spatial Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D065852"
     },
+    {
+      "term": "episodic memory"
+    },
+    {
+      "term": "closed-loop stimulation"
+    },
+    {
+      "term": "neural decoding"
+    },
+    {
+      "term": "memory encoding"
+    },
+    {
+      "term": "Electrophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
+    },
+    {
+      "term": "virtual navigation"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004706",
       "identifier_type": "URL",
@@ -36,62 +60,11 @@
       "identifier": "10.1101/2022.11.30.518606",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "beh",
-    "eeg"
-  ],
-  "resource_type_specific": "Neuroimaging Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".bdf",
-    ".json",
-    ".md",
-    ".tsv",
-    ".txt"
-  ],
-  "description": "This dataset contains behavioral and electrophysiological recordings from a hybrid spatial-navigation and free recall experiment designed to investigate memory encoding dynamics and test closed-loop stimulus timing optimization. Participants performed a virtual courier task involving spatial navigation and item delivery, followed by recall testing, across read-only baseline sessions and classifier-guided closed-loop sessions where stimulus presentation was timed to coincide with predicted memory encoding states. The dataset provides a resource for studying neural correlates of spatial and episodic memory in naturalistic task contexts. Note: Memory dynamics in closed-loop sessions may be influenced by the closed-loop timing manipulation and should be interpreted accordingly. Read-only sessions were not subject to this manipulation and are suitable for analyses of general mnemonic function.",
-  "methods_description": "The experiment employed a hybrid spatial-navigation and free recall paradigm conducted at the University of Pennsylvania's Computational Memory Lab (2021-2022). Participants completed read-only sessions to generate training data for memory classifiers, followed by closed-loop sessions where classifier-based predictions guided stimulus presentation timing. Intracranial electrophysiological recordings and behavioral event logs were collected throughout both session types. Memory dynamics in closed-loop sessions may reflect the influence of the closed-loop timing manipulation.",
-  "keywords": [
-    {
-      "term": "spatial memory"
     },
     {
-      "term": "episodic memory"
-    },
-    {
-      "term": "free recall"
-    },
-    {
-      "term": "closed-loop stimulation"
-    },
-    {
-      "term": "neural decoding"
-    },
-    {
-      "term": "memory encoding"
-    },
-    {
-      "term": "electrophysiology"
-    },
-    {
-      "term": "intracranial recording"
-    },
-    {
-      "term": "iEEG"
-    },
-    {
-      "term": "virtual navigation"
-    },
-    {
-      "term": "virtual reality"
-    },
-    {
-      "term": "machine learning"
+      "identifier": "10.18112/openneuro.ds004706.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -101,5 +74,22 @@
       "award_title": "Restoring memory with task-independent semi-chronic closed-loop direct brain stimulation and non-invasive closed-loop stimulus timing optimization"
     }
   ],
-  "source_hash": "b537249e422bc638f84aeb744c65f739ef75e569cf8b48dd8dce2a23bb03baf1"
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "sizes": [
+    "1.4 TB (301 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".yml"
+  ],
+  "source_hash": "acd21f31f7a9f6b2b0ea1fc992d5caa90233c9960ca8938eeb8af6b9e3547320"
 }
